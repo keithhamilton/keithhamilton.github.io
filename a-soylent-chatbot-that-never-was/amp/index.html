@@ -20,7 +20,7 @@
     <meta property="og:url" content="http://localhost:2368/a-soylent-chatbot-that-never-was/">
     <meta property="og:image" content="http://localhost:2368/content/images/2018/02/chat_cu.jpg">
     <meta property="article:published_time" content="2017-07-01T16:06:00.000Z">
-    <meta property="article:modified_time" content="2018-02-11T21:55:13.000Z">
+    <meta property="article:modified_time" content="2018-02-11T23:14:50.000Z">
     <meta property="article:tag" content="ixd">
     <meta property="article:tag" content="conversation design">
     
@@ -65,7 +65,7 @@
     "headline": "A Soylent Chatbot (That Never Was)",
     "url": "http://localhost:2368/a-soylent-chatbot-that-never-was/",
     "datePublished": "2017-07-01T16:06:00.000Z",
-    "dateModified": "2018-02-11T21:55:13.000Z",
+    "dateModified": "2018-02-11T23:14:50.000Z",
     "image": {
         "@type": "ImageObject",
         "url": "http://localhost:2368/content/images/2018/02/chat_cu.jpg",
@@ -126,14 +126,21 @@
 <p><em>A little backstory on Trish: she's a robot who knows everything about nutrition. She also knows that some humans love Soylent. Rationally, Trish concludes that, by learning more about what people love about Soylent, she will be able to learn more about love in general.</em></p>
 <p>So, as a quick prototype for the chatbot, we used <a href="https://www.reply.ai/">Reply.ai</a>, which is a convenience platform designed to help people get chatbots up and running quickly (across multiple platforms). It uses a node based conversation builder, which, incidentally, looked quite a bit like my interaction maps. I felt instantly at home.</p>
 <p>Trish is an interesting character to work with. Fortunately, I'd spent a lot of time writing conversational copy for the <a href="https://soylent.com/trish">Trish Storefront</a> on Soylent's website, so I was familiar with her dry tone and odd (sometimes morbid) curiosity about humans.</p>
+<hr>
 <p></p>
+<p><em>Sample from an actual chat I had with Trish. She seemed to think half-naked people rubbing their bodies close to each other represented love. We tested that theory.</em></p>
+<hr>
 <p>Our task was to take Trish's odd perspective on humans (which all comes through the lens of nutrition), and find connections to internet culture that would help, through conversation, "inform" Trish about what love really is.</p>
 <p>Arguably, the hardest part was convincing the creative directors that we were adequately getting Trish's odd personality correct. The more fulfilling part, for me at least, was diving into the deep conversation I wanted to design for participants. Here's one of the modlues:</p>
+<hr>
 <p></p>
+<p><em>One module of the dozen or so made to map out the base conversation with Trish.</em></p>
+<hr>
 <p>It's a tangled mess, but then again, so is conversation. This was just one of about thirteen modules I composed to play off of each other, which made the conversation more straightforward from a management perspective.</p>
 <p>Being able to dissect and chunk conversation into small pieces limits each piece to a single domain, making it easier to anticipate what may happen, and in which direction the conversation may go.</p>
 <p>When it comes down to it, conversation design is very similar to programming—you start with a large domain, and break it down into sufficiently small pieces that work together to achieve an outcome.</p>
 <p>The main difference is the possibility of random input into the system, but with certain tricks, such as prompting a response with possibilities, it's not unimaginable to keep a chat participant engaged and on-track.</p>
+<h5 id="hereisasampleofhowthestatemachinewassetupintheflatfile">Here is a sample of how the state machine was set up in the flatfile</h5>
 <pre><code class="language-json">"medium_high": {
   "responses": [
     "Your love of Soylent is above-average.",
