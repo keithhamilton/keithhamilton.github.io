@@ -55,7 +55,7 @@ function onloadimg(){
     enabled: true, // By default it's false, so don't forget to enable it
 
     duration: 300, // duration of the effect, in milliseconds
-    easing: 'ease-in-out', // CSS transition easing function
+    easing: 'ease-out-in', // CSS transition easing function
 
     // The "opener" function should return the element from which popup will be zoomed in
     // and to which popup will be scaled down
@@ -67,5 +67,11 @@ function onloadimg(){
     }
   }
 });
+
+var $images = $('img');
+$images.click(function(event) {
+  var target = $(this).attr('src');
+  window.open(target);
+})
 
 }); //jQuery ready
