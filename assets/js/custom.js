@@ -13,7 +13,8 @@ var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.cal
 // jQuery
 $(document).ready(function(){
 
-  $('.post-featured-image, .post-single-featured p').imagesLoaded().done( onloadimg );
+  $('.post-featured-image, .post-single-featured p').imagesLoaded().done(
+  onloadimg );
 
 function onloadimg(){
   $('.loading').hide();
@@ -23,7 +24,8 @@ function onloadimg(){
   $('.pagination').show();
   $('.content').masonry({
   // options
-     itemSelector: '.grid'
+     itemSelector: '.grid',
+     horizontalOrder: true,
     });
 
   $('.post-single-featured').masonry({
