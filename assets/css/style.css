@@ -115,7 +115,7 @@ ul.nav {margin-top: 15px;}
 .post-single .post-single-content p > code { color: #07a; }
 .post-single .post-single-content p mark { color: #999; background: none;  }
 .post-single .post-single-date { color: #bbb; }
-.post-single a {color: #bbb;}
+.post-single a {color: #bbb; text-decoration: underline;}
 .post-single a:hover {color: #555;}
 .post-single .post-single-content blockquote {font-family: 'Helvetica', sans-serif; color:#aaa; border-left: none; padding: 0; margin: 0 auto; width: 120%; position: relative; right: 10%; font-size: 22px; line-height: 34px; }
 .post-single .post-single-content blockquote p{padding-left: 50px;}
